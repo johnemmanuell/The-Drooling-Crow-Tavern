@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Drooling Crow Tavern</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    
+    <header>
+        <h1>The Drooling Crow Tavern</h1>
+        <p>Welcome, traveler! Rest and feast before your journey.</p>
+    </header>
+
+   
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="menu.html">Menu</a> |
+        <a href="#carriage">Carriage</a>
+    </nav>
+
+    <hr>
+
+   
+   <section id="menu">
+    <h2>Tavern Menu</h2>
+
+    <div>
+        <img id="Ale" src="Ale.jpg">
+        <h3>Ale — 5 Gold</h3>
+        <p>A strong brew to lift your spirits.</p>
+        <button onclick="addToCarriage('Ale', 5)">Add to Carriage</button>
+    </div>
+    <br>
+    <div>
+        <img id="Mead" src="mead.jpg">
+        <h3>Mead — 8 Gold</h3>
+        <p>Sweet honey wine favored by warriors.</p>
+        <button onclick="addToCarriage('Mead', 8)">Add to Carriage</button>
+    </div>
+    <br>
+    <div>
+        <img id="Meat" src="meat.jpg">
+        <h3>Roasted Cow Meat — 15 Gold</h3>
+        <p>Freshly cooked over an open flame.</p>
+        <button onclick="addToCarriage('Roasted Cow Meat', 15)">Add to Carriage</button>
+    </div>
+    <br>
+    <div>
+        <img id="Bread" src="bread.jpg">
+        <h3>Loaf of Bread — 3 Gold</h3>
+        <p>Warm and baked daily.</p>
+        <button onclick="addToCarriage('Loaf of Bread', 3)">Add to Carriage</button>
+    </div>
+    <br>		
+    <div>
+        <img id="Stew" src="stew.jpg">
+        <h3>Stew — 10 Gold</h3>
+        <p>Hot meat and vegetable soup.</p>
+        <button onclick="addToCarriage('Stew', 10)">Add to Carriage</button>
+    </div>
+    <br>		
+    <div>
+        <img id="Goose" src="goose.jpg">
+        <h3>Roasted Goose — 20 Gold</h3>
+        <p>Freshly roasted and juicy.</p>
+        <button onclick="addToCarriage('Roasted Goose', 20)">Add to Carriage</button>
+    </div>
+</section>
+    <hr>
+
+   
+   <section id="carriage">
+    <h2>Your Carriage</h2>
+    
+    <p id="carriageItems">No items yet.</p>
+
+    <button onclick="checkoutCarriage()">Checkout Carriage</button>
+</section>
+
+    <hr>
+
+  
+    <footer>
+        <p>© 2026 The Drooling Crow Tavern	 | "Drink well, traveler."</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
